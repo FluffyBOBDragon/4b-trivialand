@@ -32,6 +32,16 @@ body {
 
 }
 
+#diff3 {
+	background-color:aqua;
+	border-color:white;
+}
+
+#diff4 {
+	background-color:#BE63EB;
+	border-color:white;
+}
+
 #title {
 	/*
 	the title size is set at 40 px
