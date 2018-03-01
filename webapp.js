@@ -237,6 +237,8 @@ function rightAnswer() {
 	score += 50;
 	document.getElementById("score").value = score;
 	document.getElementById("progressBar").value = score;
+	
+	checkScore();
 }
 
 function wrongAnswer() {
@@ -247,6 +249,14 @@ function wrongAnswer() {
 	score -= 25;
 	document.getElementById("score").value = score;
 	document.getElementById("progressBar").value = score;
+	
+	checkScore();
+}
+
+function checkScore() {
+	if (score >= 1000 ) {
+		confirm("You win! You can keep play or play on a different difficulty. If yes, hit OK, if no, then hit CLOSE");
+	}
 }
 
 //COOKIES
