@@ -1,6 +1,7 @@
 // JavaScript Document
 
 var score = 0;
+var difficulty = 1;
 
 window.onload = function() {
 	
@@ -30,7 +31,7 @@ function randomQ() {
 	document.getElementById("a3").removeEventListener("click", rightAnswer);
 	document.getElementById("a4").removeEventListener("click", rightAnswer);
 	
-	var n = Math.floor(Math.random() * 13);
+	var n = Math.floor(Math.random() * 14);
 	switch(n) {
 		case 0:
 			// question 1
@@ -266,4 +267,9 @@ function setCookie (cname, cvalue, exdays) {
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
 	var expires = "expires" + d.toUTCString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+function changeDiff(difficulty) {
+	
 }
