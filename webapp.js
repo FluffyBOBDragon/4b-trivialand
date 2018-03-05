@@ -270,6 +270,7 @@ function setCookie (cname, cvalue, exdays) {
 }
 
 
-function changeDiff(difficulty) {
-	
+function changeDiff(level) {
+	difficulty = Number(level);
+	alert(difficulty);
 }
